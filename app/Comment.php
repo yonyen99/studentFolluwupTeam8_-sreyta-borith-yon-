@@ -7,10 +7,13 @@ use App\Student;
 use App\User;
 class Comment extends Model
 {
-    public function students(){
-        return $this->belongsToMany(Student::class);
+    
+    public function user(){
+        return $this->belongsTo('App\User');
     }
-    public function users(){
-        return $this->belongsToMany(User::class);
+
+    public function student(){
+        return $this->belongsTo('App\Student');
     }
+
 }
