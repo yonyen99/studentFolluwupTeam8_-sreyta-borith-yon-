@@ -9,7 +9,7 @@ class userController extends Controller
     public function showFormTotur(){
         return view('users.form');
     }
-
+// add tutor
     public function addTotur(Request $request){
          $Users = User::find(1);
          $Users = new User();
@@ -21,6 +21,5 @@ class userController extends Controller
          $Users->save();
          return redirect('home');
        
-    
     }
 }

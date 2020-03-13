@@ -21,7 +21,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 // route to show form tutor
 Route::get('/showformTutor','userController@showFormTotur');
-
+// route to add tutor
 Route::post('/addTotur','userController@addTotur')->name('addTotur');
 
 
