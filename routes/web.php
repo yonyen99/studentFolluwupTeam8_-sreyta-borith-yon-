@@ -18,5 +18,11 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
 // route to show form tutor
 Route::get('/showformTutor','userController@showFormTotur');
+
+Route::post('/addTotur','userController@addTotur')->name('addTotur');
+
+
+
