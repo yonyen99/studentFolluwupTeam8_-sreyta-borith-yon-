@@ -6,8 +6,7 @@
         <div class="col-md-8">
            
             {{-- add tutor --}}
-          
-        <a class="nav-link" href="{{ route('register') }}">{{ __('Add Tutor') }}</a>
+        <a class="nav-link" href="showformTutor">{{ __('Add Tutor') }}</a>
                              
         </div>
     </div>
