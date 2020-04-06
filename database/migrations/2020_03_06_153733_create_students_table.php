@@ -23,7 +23,7 @@ class CreateStudentsTable extends Migration
             $table->string('student_id');
             $table->string('province');
             $table->string('status');
-            $table->string('picture');
+            $table->mediumText('picture')->nullable();
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')
                   ->references('id')
